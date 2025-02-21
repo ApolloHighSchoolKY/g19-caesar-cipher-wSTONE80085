@@ -18,7 +18,9 @@ public class CaesarCipher {
     }
 
     public CaesarCipher(int num){
-
+        shift = num;
+        alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        shifted = new char[];
     }
 
     public String encrypt(String message){
